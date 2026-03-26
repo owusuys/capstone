@@ -16,22 +16,24 @@ export function buildAdjacency(edges: PrereqEdge[]) {
   return { downstream, upstream };
 }
 
-// BFS to get all downstream courses (affected if you fail this course)
+// BFS to get all downstream courses (affected if you fail this course).
+// maxDepth limits how many hops to follow (default: unlimited).
 export function getDownstream(
   courseId: string,
-  downstream: Map<string, Set<string>>
+  downstream: Map<string, Set<string>>,
+  maxDepth = Infinity
 ): Set<string> {
   const visited = new Set<string>();
-  const queue = [courseId];
+  const queue: [string, number][] = [[courseId, 0]];
 
   while (queue.length > 0) {
-    const current = queue.shift()!;
+    const [current, depth] = queue.shift()!;
     const deps = downstream.get(current);
     if (!deps) continue;
     for (const dep of deps) {
       if (!visited.has(dep)) {
         visited.add(dep);
-        queue.push(dep);
+        if (depth + 1 < maxDepth) queue.push([dep, depth + 1]);
       }
     }
   }
@@ -39,22 +41,24 @@ export function getDownstream(
   return visited;
 }
 
-// BFS to get all upstream courses (prerequisites needed to take this course)
+// BFS to get all upstream courses (prerequisites needed to take this course).
+// maxDepth limits how many hops to follow (default: unlimited).
 export function getUpstream(
   courseId: string,
-  upstream: Map<string, Set<string>>
+  upstream: Map<string, Set<string>>,
+  maxDepth = Infinity
 ): Set<string> {
   const visited = new Set<string>();
-  const queue = [courseId];
+  const queue: [string, number][] = [[courseId, 0]];
 
   while (queue.length > 0) {
-    const current = queue.shift()!;
+    const [current, depth] = queue.shift()!;
     const prereqs = upstream.get(current);
     if (!prereqs) continue;
     for (const prereq of prereqs) {
       if (!visited.has(prereq)) {
         visited.add(prereq);
-        queue.push(prereq);
+        if (depth + 1 < maxDepth) queue.push([prereq, depth + 1]);
       }
     }
   }

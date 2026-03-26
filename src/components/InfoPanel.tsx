@@ -5,6 +5,9 @@ interface InfoPanelProps {
   mode: HighlightMode | null;
   highlightedNodes: Set<string>;
   allCourses: Course[];
+  isPinned?: boolean;
+  onPin?: () => void;
+  onUnpin?: () => void;
 }
 
 export default function InfoPanel({
@@ -12,6 +15,9 @@ export default function InfoPanel({
   mode,
   highlightedNodes,
   allCourses,
+  isPinned,
+  onPin,
+  onUnpin,
 }: InfoPanelProps) {
   if (!course) {
     return (
@@ -49,6 +55,31 @@ export default function InfoPanel({
           {course.credits} credit{course.credits !== 1 ? "s" : ""}
         </div>
       </div>
+
+      {(onPin || onUnpin) && (
+        <button
+          onClick={isPinned ? onUnpin : onPin}
+          style={{
+            width: "100%",
+            padding: "8px 12px",
+            marginBottom: 16,
+            borderRadius: 6,
+            border: `1.5px solid ${isPinned ? "#7c3aed" : "#d1d5db"}`,
+            backgroundColor: isPinned ? "#f5f3ff" : "#fff",
+            color: isPinned ? "#5b21b6" : "#374151",
+            fontSize: 13,
+            fontWeight: 600,
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 6,
+            transition: "all 0.15s ease",
+          }}
+        >
+          {isPinned ? "Unpin course" : "Pin course"}
+        </button>
+      )}
 
       {course.prerequisitesRaw && (
         <div style={{ marginBottom: 12 }}>

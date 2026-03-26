@@ -4,7 +4,7 @@ import type { NodeProps } from "reactflow";
 import type { Course } from "../types/course";
 
 interface CourseNodeData extends Course {
-  highlight?: "selected" | "fail" | "plan" | "dimmed" | "coreq" | null;
+  highlight?: "selected" | "fail" | "plan" | "dimmed" | "coreq" | "pinned" | null;
 }
 
 function CourseNode({ data }: NodeProps<CourseNodeData>) {
@@ -35,6 +35,12 @@ function CourseNode({ data }: NodeProps<CourseNodeData>) {
       borderColor = "#3b82f6";
       borderStyle = "dashed";
       textColor = "#1e40af";
+      break;
+    case "pinned":
+      bgColor = "#f5f3ff";
+      borderColor = "#7c3aed";
+      borderStyle = "solid";
+      textColor = "#5b21b6";
       break;
     case "dimmed":
       opacity = 0.25;

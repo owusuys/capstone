@@ -60,6 +60,8 @@ export async function computeElkLayout(
     id: `e-${i}`,
     source: e.source,
     target: e.target,
+    sourceHandle: "bottom",
+    targetHandle: "top",
     label: e.gradeReq ? `${e.gradeReq} req` : undefined,
     animated: false,
     style: { stroke: "#9ca3af", strokeWidth: 1.5 },

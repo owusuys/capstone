@@ -3,6 +3,7 @@ import type { Node, Edge } from "reactflow";
 import GraphView from "./components/GraphView";
 import FocusGraphView from "./components/FocusGraphView";
 import PathwayView from "./components/PathwayView";
+import ExploreGraphView from "./components/ExploreGraphView";
 import InfoPanel from "./components/InfoPanel";
 import ModeToggle from "./components/ModeToggle";
 import ViewModeToggle from "./components/ViewModeToggle";
@@ -23,6 +24,9 @@ function App() {
   const [elkEdges, setElkEdges] = useState<Edge[] | null>(null);
   const [elkLoading, setElkLoading] = useState(true);
   const [searchCourseId, setSearchCourseId] = useState<string | null>(null);
+  const [prereqDepth, setPrereqDepth] = useState<number>(Infinity);
+  const [unlockedDepth, setUnlockedDepth] = useState<number>(Infinity);
+  const [pinnedCourseIds, setPinnedCourseIds] = useState<Set<string>>(new Set());
 
   const [courses, setCourses] = useState<Course[]>([]);
   const [prereqEdges, setPrereqEdges] = useState<PrereqEdge[]>([]);
@@ -58,7 +62,20 @@ function App() {
     setViewMode(newMode);
     setSelectedCourse(null);
     setHighlightedNodes(new Set());
+    if (newMode !== "explore") setPinnedCourseIds(new Set());
   };
+
+  const handlePinCourse = useCallback((courseId: string) => {
+    setPinnedCourseIds((prev) => new Set([...prev, courseId]));
+  }, []);
+
+  const handleUnpinCourse = useCallback((courseId: string) => {
+    setPinnedCourseIds((prev) => {
+      const next = new Set(prev);
+      next.delete(courseId);
+      return next;
+    });
+  }, []);
 
   const handleSearch = useCallback((courseId: string) => {
     setSearchCourseId(courseId);
@@ -120,6 +137,10 @@ function App() {
             elkEdges={elkEdges}
             elkLoading={elkLoading}
             searchCourseId={searchCourseId}
+            prereqDepth={prereqDepth}
+            unlockedDepth={unlockedDepth}
+            onPrereqDepthChange={setPrereqDepth}
+            onUnlockedDepthChange={setUnlockedDepth}
           />
         )}
         {viewMode === "focus" && (
@@ -141,11 +162,29 @@ function App() {
             searchCourseId={searchCourseId}
           />
         )}
+        {viewMode === "explore" && (
+          <ExploreGraphView
+            courses={courses}
+            prereqEdges={prereqEdges}
+            mode={mode}
+            onSelectCourse={setSelectedCourse}
+            onHighlight={setHighlightedNodes}
+            searchCourseId={searchCourseId}
+            prereqDepth={prereqDepth}
+            unlockedDepth={unlockedDepth}
+            onPrereqDepthChange={setPrereqDepth}
+            onUnlockedDepthChange={setUnlockedDepth}
+            pinnedCourseIds={pinnedCourseIds}
+          />
+        )}
         <InfoPanel
           course={selectedCourse}
           mode={mode}
           highlightedNodes={highlightedNodes}
           allCourses={courses}
+          isPinned={viewMode === "explore" && selectedCourse !== null ? pinnedCourseIds.has(selectedCourse.id) : undefined}
+          onPin={viewMode === "explore" && selectedCourse !== null ? () => handlePinCourse(selectedCourse.id) : undefined}
+          onUnpin={viewMode === "explore" && selectedCourse !== null ? () => handleUnpinCourse(selectedCourse.id) : undefined}
         />
       </div>
     </div>

@@ -1,4 +1,4 @@
-export type ViewMode = "overview" | "focus" | "pathway";
+export type ViewMode = "overview" | "focus" | "pathway" | "explore";
 
 interface ViewModeToggleProps {
   viewMode: ViewMode;
@@ -9,6 +9,7 @@ const tabs: { value: ViewMode; label: string }[] = [
   { value: "overview", label: "Overview" },
   { value: "focus",    label: "Focus" },
   { value: "pathway",  label: "Pathway" },
+  { value: "explore",  label: "Explore" },
 ];
 
 export default function ViewModeToggle({
@@ -22,7 +23,7 @@ export default function ViewModeToggle({
           key={value}
           onClick={() => onViewModeChange(value)}
           style={{
-            padding: "8px 14px",
+            padding: "6px 11px",
             borderRadius: 6,
             border: "none",
             cursor: "pointer",
