@@ -1,0 +1,1790 @@
+{
+  "courses": [
+    {
+      "id": "CS 1014",
+      "name": "Introduction to Computational Thinking",
+      "credits": 3,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 1044",
+      "name": "Introduction to Programming in C",
+      "credits": 3,
+      "prerequisitesRaw": null,
+      "notes": "Partially duplicates 1344",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 1054",
+      "name": "Introduction to Programming in Java",
+      "credits": 3,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 1064",
+      "name": "Introduction to Programming in Python",
+      "credits": 3,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 1114",
+      "name": "Introduction to Software Design",
+      "credits": 3,
+      "prerequisitesRaw": null,
+      "notes": "Corequisite: MATH 1225. Partially duplicates 1054, 1124, 1705",
+      "corequisites": [
+        "MATH 1225"
+      ],
+      "isCS": true
+    },
+    {
+      "id": "CS 1944",
+      "name": "Computer Science First Year Seminar",
+      "credits": 1,
+      "prerequisitesRaw": "CS 1114 or CS 2064 or ECE 2514",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 2064",
+      "name": "Intermediate Programming in Python",
+      "credits": 3,
+      "prerequisitesRaw": "CS 1064",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 2104",
+      "name": "Introduction to Problem Solving in Computer Science",
+      "credits": 3,
+      "prerequisitesRaw": "(MATH 1205 or MATH 1225 or MATH 1526) and (CS 1114 or CS 2064 or ECE 2514)",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 2114",
+      "name": "Software Design and Data Structures",
+      "credits": 3,
+      "prerequisitesRaw": "CS 1114 or CS 2064",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 2144",
+      "name": "Competitive Problem Solving I",
+      "credits": 3,
+      "prerequisitesRaw": "CS 1114",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 2164",
+      "name": "Foundations of Contemporary Security Environments",
+      "credits": 3,
+      "prerequisitesRaw": null,
+      "notes": "Cross-listed: BIT 2164, PSCI 2164",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 2304",
+      "name": "Topics in Programming Systems",
+      "credits": 1,
+      "prerequisitesRaw": "CS 2114",
+      "notes": "Repeatable up to 3 credit hours",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 2505",
+      "name": "Introduction to Computer Organization",
+      "credits": 3,
+      "prerequisitesRaw": "CS 2114",
+      "notes": "Corequisite: MATH 2534 or MATH 3034",
+      "corequisites": [
+        "MATH 2534",
+        "MATH 3034"
+      ],
+      "isCS": true
+    },
+    {
+      "id": "CS 2506",
+      "name": "Introduction to Computer Organization II",
+      "credits": 3,
+      "prerequisitesRaw": "(CS 2114 or ECE 3514) and (CS 2505 or ECE 2564) and (MATH 2534 or MATH 3034)",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3114",
+      "name": "Data Structures and Algorithms",
+      "credits": 3,
+      "prerequisitesRaw": "(CS 2114 or ECE 3514) and (CS 2505 or ECE 2564) and (MATH 2534 or MATH 3034)",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3214",
+      "name": "Computer Systems",
+      "credits": 3,
+      "prerequisitesRaw": "(CS 2506 and CS 2114) or (ECE 2564 and ECE 3574)",
+      "notes": "Grade of C or better required in CS pre-requisites 2506 and 2114",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3274",
+      "name": "Software Reverse Engineering",
+      "credits": 3,
+      "prerequisitesRaw": "(CS 2114 and CS 2506) or (ECE 2534 and ECE 3514)",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3304",
+      "name": "Comparative Languages",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3114",
+      "notes": "Grade of C or better required in CS prerequisite 3114",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3314",
+      "name": "Programming Language Theory and Practice",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3114",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3414",
+      "name": "Numerical Methods",
+      "credits": 3,
+      "prerequisitesRaw": "(CS 1044 or CS 1705 or CS 1114 or CS 1124) and (MATH 2406H or (CMDA 2005 and CMDA 2006) or ((MATH 2214 or MATH 2214H) and (MATH 2204H or MATH 2204)))",
+      "notes": "Cross-listed: MATH 3414",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3604",
+      "name": "Professionalism in Computing",
+      "credits": 3,
+      "prerequisitesRaw": "CS 1944 and (CS 2114 or ECE 3514) and (COMM 2004 or COMM 2014)",
+      "notes": "Grade of C or better required in CS prerequisite 3114",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3634",
+      "name": "CS Foundations for Computational Modeling & Data Analytics",
+      "credits": 3,
+      "prerequisitesRaw": "CS 2114",
+      "notes": "Cross-listed: CMDA 3634. Not for CS major credit",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3654",
+      "name": "Introductory Data Analytics and Visualization",
+      "credits": 3,
+      "prerequisitesRaw": "(CS 1114 or CS 1044 or CS 1054 or CS 1064) and (MATH 2204 or MATH 2204H or MATH 2406H or CMDA 2005) and (STAT 3006 or STAT 4105 or STAT 4705 or STAT 4714 or CMDA 2006)",
+      "notes": "Cross-listed: CMDA 3654, STAT 3654",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3704",
+      "name": "Intermediate Software Design and Engineering",
+      "credits": 3,
+      "prerequisitesRaw": "CS 2114",
+      "notes": "Grade of C or better required in CS prerequisite 3114",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3714",
+      "name": "Mobile Software Development",
+      "credits": 3,
+      "prerequisitesRaw": "CS 2114 or ECE 3514",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3724",
+      "name": "Introduction to Human-Computer Interaction",
+      "credits": 3,
+      "prerequisitesRaw": "CS 1114 or CS 1044 or CS 1054 or CS 1064",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3744",
+      "name": "Introduction to GUI Programming and Graphics",
+      "credits": 3,
+      "prerequisitesRaw": "(CS 2114 or ECE 3514) and (MATH 1114 or MATH 2114) and (MATH 1224 or MATH 2204)",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3754",
+      "name": "Cloud Software Development",
+      "credits": 3,
+      "prerequisitesRaw": "CS 2114 or ECE 3514",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 3824",
+      "name": "Introduction to Computational Biology and Bioinformatics",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3114",
+      "notes": "Grade of C or better in CS 3114",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4014",
+      "name": "Algorithms & Society",
+      "credits": 3,
+      "prerequisitesRaw": null,
+      "notes": "Pre: Junior Standing. Cross-listed: STS 4014",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4094",
+      "name": "Computer Science Capstone",
+      "credits": 3,
+      "prerequisitesRaw": "CS 2506 and CS 3114",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4104",
+      "name": "Data and Algorithm Analysis",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3114 and (MATH 3034 or MATH 3134)",
+      "notes": "Grade of C or better required in CS prerequisite 3114",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4114",
+      "name": "Introduction to Formal Languages and Automata Theory",
+      "credits": 3,
+      "prerequisitesRaw": "MATH 3134 or MATH 3034",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4124",
+      "name": "Theory of Computation",
+      "credits": 3,
+      "prerequisitesRaw": "MATH 3134 or MATH 3034",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4134",
+      "name": "Quantum Computation and Information Processing",
+      "credits": 3,
+      "prerequisitesRaw": "MATH 2114 or MATH 2114H",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4144",
+      "name": "Competitive Problem Solving II",
+      "credits": 3,
+      "prerequisitesRaw": "CS 2114 and CS 2144",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4164",
+      "name": "Future of Security: Integrative Solutions",
+      "credits": 3,
+      "prerequisitesRaw": "PSCI 2164 or BIT 2164 or CS 2164",
+      "notes": "Cross-listed: BIT 4164, PSCI 4164",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4204",
+      "name": "Computer Graphics",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3744",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4224",
+      "name": "Linux Kernel Programming",
+      "credits": 3,
+      "prerequisitesRaw": "ECE 3574 or CS 3114",
+      "notes": "Cross-listed: ECE 4414",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4234",
+      "name": "Parallel Computation",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3214",
+      "notes": "Grade of C or better required in CS prerequisite 3214",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4254",
+      "name": "Computer Network Architecture and Programming",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3214",
+      "notes": "Grade of C or better required in CS prerequisite 3214",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4264",
+      "name": "Principles of Computer Security",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3214 or (ECE 3504 and ECE 3574)",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4274",
+      "name": "Secure Computing Capstone",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3114 and CS 3214",
+      "notes": "Corequisite: CS 4264",
+      "corequisites": [
+        "CS 4264"
+      ],
+      "isCS": true
+    },
+    {
+      "id": "CS 4284",
+      "name": "Systems & Networking Capstone",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3114 and CS 3214",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4304",
+      "name": "Compiler Design and Implementation",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3214",
+      "notes": "Grade of C or better required in CS prerequisite 3214",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4414",
+      "name": "Issues in Scientific Computing",
+      "credits": 3,
+      "prerequisitesRaw": "(MATH 2214 or MATH 2214H or MATH 2406H or CMDA 2006) and MATH 3214 and (CS 1114 or MATH 1454)",
+      "notes": "Cross-listed: MATH 4414",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4504",
+      "name": "Computer Organization",
+      "credits": 3,
+      "prerequisitesRaw": "ECE 2500 or CS 3214 or ECE 3504",
+      "notes": "Cross-listed: ECE 4504",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4604",
+      "name": "Introduction to Data Base Management Systems",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3114",
+      "notes": "Grade of C or better required in CS prerequisite 3114",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4624",
+      "name": "Multimedia, Hypertext and Information Access",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3114",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4634",
+      "name": "Design Of Information",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3114 and CS 3724",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4644",
+      "name": "Creative Computing Studio",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3724",
+      "notes": "Grade of C or better in CS 3724",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4654",
+      "name": "Intermediate Data Analytics and Machine Learning",
+      "credits": 3,
+      "prerequisitesRaw": "(STAT 3654 or CMDA 3654 or CS 3654) and (CMDA 2006 or STAT 3104 or STAT 4106 or STAT 4706)",
+      "notes": "Cross-listed: CMDA 4654, STAT 4654",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4664",
+      "name": "Data-Centric Computing Capstone",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3114 and (CS 3654 or CMDA 3654 or STAT 3654)",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4704",
+      "name": "Software Engineering Capstone",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3704 or CS 3714 or CS 3754",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4774",
+      "name": "Human-Computer Interaction Design Experience",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3724 and (HIST 2604 or SOC 2604 or STS 2604) and COMM 2084",
+      "notes": "Not for CS major credit. Senior standing",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4784",
+      "name": "Human-Computer Interaction Capstone",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3724 and CS 3744",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4804",
+      "name": "Introduction to Artificial Intelligence",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3114",
+      "notes": "Senior standing required. Grade of C or better in CS 3114",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4824",
+      "name": "Machine Learning",
+      "credits": 3,
+      "prerequisitesRaw": "(ECE 3514 or CS 2114) and (STAT 3704 or STAT 4105 or STAT 4604 or STAT 4705 or STAT 4714 or CMDA 2006)",
+      "notes": "Cross-listed: ECE 4424",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4884",
+      "name": "Computational Biology and Bioinformatics Capstone",
+      "credits": 3,
+      "prerequisitesRaw": "CS 3824",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4894",
+      "name": "Special Topics in Computer Science",
+      "credits": 3,
+      "prerequisitesRaw": "CS 2114 and CS 2505",
+      "notes": "Repeatable up to 9 credit hours",
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "CS 4944",
+      "name": "Seminar",
+      "credits": 1,
+      "prerequisitesRaw": "CS 3604",
+      "notes": null,
+      "corequisites": [],
+      "isCS": true
+    },
+    {
+      "id": "ECE 2514",
+      "name": "ECE 2514",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 1205",
+      "name": "MATH 1205",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 1225",
+      "name": "MATH 1225",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 1526",
+      "name": "MATH 1526",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "ECE 3514",
+      "name": "ECE 3514",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "ECE 2564",
+      "name": "ECE 2564",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 2534",
+      "name": "MATH 2534",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 3034",
+      "name": "MATH 3034",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "ECE 3574",
+      "name": "ECE 3574",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "ECE 2534",
+      "name": "ECE 2534",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "CS 1705",
+      "name": "CS 1705",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "CS 1124",
+      "name": "CS 1124",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 2406H",
+      "name": "MATH 2406H",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "CMDA 2005",
+      "name": "CMDA 2005",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "CMDA 2006",
+      "name": "CMDA 2006",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 2214",
+      "name": "MATH 2214",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 2214H",
+      "name": "MATH 2214H",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 2204H",
+      "name": "MATH 2204H",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 2204",
+      "name": "MATH 2204",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "COMM 2004",
+      "name": "COMM 2004",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "COMM 2014",
+      "name": "COMM 2014",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "STAT 3006",
+      "name": "STAT 3006",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "STAT 4105",
+      "name": "STAT 4105",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "STAT 4705",
+      "name": "STAT 4705",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "STAT 4714",
+      "name": "STAT 4714",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 1114",
+      "name": "MATH 1114",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 2114",
+      "name": "MATH 2114",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 1224",
+      "name": "MATH 1224",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 3134",
+      "name": "MATH 3134",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 2114H",
+      "name": "MATH 2114H",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "PSCI 2164",
+      "name": "PSCI 2164",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "BIT 2164",
+      "name": "BIT 2164",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "ECE 3504",
+      "name": "ECE 3504",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 3214",
+      "name": "MATH 3214",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "MATH 1454",
+      "name": "MATH 1454",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "ECE 2500",
+      "name": "ECE 2500",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "STAT 3654",
+      "name": "STAT 3654",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "CMDA 3654",
+      "name": "CMDA 3654",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "STAT 3104",
+      "name": "STAT 3104",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "STAT 4106",
+      "name": "STAT 4106",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "STAT 4706",
+      "name": "STAT 4706",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "HIST 2604",
+      "name": "HIST 2604",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "SOC 2604",
+      "name": "SOC 2604",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "STS 2604",
+      "name": "STS 2604",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "COMM 2084",
+      "name": "COMM 2084",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "STAT 3704",
+      "name": "STAT 3704",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    },
+    {
+      "id": "STAT 4604",
+      "name": "STAT 4604",
+      "credits": 0,
+      "prerequisitesRaw": null,
+      "notes": null,
+      "corequisites": [],
+      "isCS": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "CS 1114",
+      "target": "CS 1944",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2064",
+      "target": "CS 1944",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 2514",
+      "target": "CS 1944",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1064",
+      "target": "CS 2064",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 1205",
+      "target": "CS 2104",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 1225",
+      "target": "CS 2104",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 1526",
+      "target": "CS 2104",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1114",
+      "target": "CS 2104",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2064",
+      "target": "CS 2104",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 2514",
+      "target": "CS 2104",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1114",
+      "target": "CS 2114",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2064",
+      "target": "CS 2114",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1114",
+      "target": "CS 2144",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 2304",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 2505",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 2506",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 3514",
+      "target": "CS 2506",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2505",
+      "target": "CS 2506",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 2564",
+      "target": "CS 2506",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2534",
+      "target": "CS 2506",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 3034",
+      "target": "CS 2506",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 3114",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 3514",
+      "target": "CS 3114",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2505",
+      "target": "CS 3114",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 2564",
+      "target": "CS 3114",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2534",
+      "target": "CS 3114",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 3034",
+      "target": "CS 3114",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2506",
+      "target": "CS 3214",
+      "gradeReq": "C"
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 3214",
+      "gradeReq": "C"
+    },
+    {
+      "source": "ECE 2564",
+      "target": "CS 3214",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 3574",
+      "target": "CS 3214",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 3274",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2506",
+      "target": "CS 3274",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 2534",
+      "target": "CS 3274",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 3514",
+      "target": "CS 3274",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 3304",
+      "gradeReq": "C"
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 3314",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1044",
+      "target": "CS 3414",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1705",
+      "target": "CS 3414",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1114",
+      "target": "CS 3414",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1124",
+      "target": "CS 3414",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2406H",
+      "target": "CS 3414",
+      "gradeReq": null
+    },
+    {
+      "source": "CMDA 2005",
+      "target": "CS 3414",
+      "gradeReq": null
+    },
+    {
+      "source": "CMDA 2006",
+      "target": "CS 3414",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2214",
+      "target": "CS 3414",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2214H",
+      "target": "CS 3414",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2204H",
+      "target": "CS 3414",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2204",
+      "target": "CS 3414",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1944",
+      "target": "CS 3604",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 3604",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 3514",
+      "target": "CS 3604",
+      "gradeReq": null
+    },
+    {
+      "source": "COMM 2004",
+      "target": "CS 3604",
+      "gradeReq": null
+    },
+    {
+      "source": "COMM 2014",
+      "target": "CS 3604",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 3634",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1114",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1044",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1054",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1064",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2204",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2204H",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2406H",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "CMDA 2005",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 3006",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 4105",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 4705",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 4714",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "CMDA 2006",
+      "target": "CS 3654",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 3704",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 3714",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 3514",
+      "target": "CS 3714",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1114",
+      "target": "CS 3724",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1044",
+      "target": "CS 3724",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1054",
+      "target": "CS 3724",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1064",
+      "target": "CS 3724",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 3744",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 3514",
+      "target": "CS 3744",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 1114",
+      "target": "CS 3744",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2114",
+      "target": "CS 3744",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 1224",
+      "target": "CS 3744",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2204",
+      "target": "CS 3744",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 3754",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 3514",
+      "target": "CS 3754",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 3824",
+      "gradeReq": "C"
+    },
+    {
+      "source": "CS 2506",
+      "target": "CS 4094",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 4094",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 4104",
+      "gradeReq": "C"
+    },
+    {
+      "source": "MATH 3034",
+      "target": "CS 4104",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 3134",
+      "target": "CS 4104",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 3134",
+      "target": "CS 4114",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 3034",
+      "target": "CS 4114",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 3134",
+      "target": "CS 4124",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 3034",
+      "target": "CS 4124",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2114",
+      "target": "CS 4134",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2114H",
+      "target": "CS 4134",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 4144",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2144",
+      "target": "CS 4144",
+      "gradeReq": null
+    },
+    {
+      "source": "PSCI 2164",
+      "target": "CS 4164",
+      "gradeReq": null
+    },
+    {
+      "source": "BIT 2164",
+      "target": "CS 4164",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2164",
+      "target": "CS 4164",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3744",
+      "target": "CS 4204",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 3574",
+      "target": "CS 4224",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 4224",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3214",
+      "target": "CS 4234",
+      "gradeReq": "C"
+    },
+    {
+      "source": "CS 3214",
+      "target": "CS 4254",
+      "gradeReq": "C"
+    },
+    {
+      "source": "CS 3214",
+      "target": "CS 4264",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 3504",
+      "target": "CS 4264",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 3574",
+      "target": "CS 4264",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 4274",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3214",
+      "target": "CS 4274",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 4284",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3214",
+      "target": "CS 4284",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3214",
+      "target": "CS 4304",
+      "gradeReq": "C"
+    },
+    {
+      "source": "MATH 2214",
+      "target": "CS 4414",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2214H",
+      "target": "CS 4414",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 2406H",
+      "target": "CS 4414",
+      "gradeReq": null
+    },
+    {
+      "source": "CMDA 2006",
+      "target": "CS 4414",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 3214",
+      "target": "CS 4414",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 1114",
+      "target": "CS 4414",
+      "gradeReq": null
+    },
+    {
+      "source": "MATH 1454",
+      "target": "CS 4414",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 2500",
+      "target": "CS 4504",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3214",
+      "target": "CS 4504",
+      "gradeReq": null
+    },
+    {
+      "source": "ECE 3504",
+      "target": "CS 4504",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 4604",
+      "gradeReq": "C"
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 4624",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 4634",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3724",
+      "target": "CS 4634",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3724",
+      "target": "CS 4644",
+      "gradeReq": "C"
+    },
+    {
+      "source": "STAT 3654",
+      "target": "CS 4654",
+      "gradeReq": null
+    },
+    {
+      "source": "CMDA 3654",
+      "target": "CS 4654",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3654",
+      "target": "CS 4654",
+      "gradeReq": null
+    },
+    {
+      "source": "CMDA 2006",
+      "target": "CS 4654",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 3104",
+      "target": "CS 4654",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 4106",
+      "target": "CS 4654",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 4706",
+      "target": "CS 4654",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 4664",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3654",
+      "target": "CS 4664",
+      "gradeReq": null
+    },
+    {
+      "source": "CMDA 3654",
+      "target": "CS 4664",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 3654",
+      "target": "CS 4664",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3704",
+      "target": "CS 4704",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3714",
+      "target": "CS 4704",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3754",
+      "target": "CS 4704",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3724",
+      "target": "CS 4774",
+      "gradeReq": null
+    },
+    {
+      "source": "HIST 2604",
+      "target": "CS 4774",
+      "gradeReq": null
+    },
+    {
+      "source": "SOC 2604",
+      "target": "CS 4774",
+      "gradeReq": null
+    },
+    {
+      "source": "STS 2604",
+      "target": "CS 4774",
+      "gradeReq": null
+    },
+    {
+      "source": "COMM 2084",
+      "target": "CS 4774",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3724",
+      "target": "CS 4784",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3744",
+      "target": "CS 4784",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3114",
+      "target": "CS 4804",
+      "gradeReq": "C"
+    },
+    {
+      "source": "ECE 3514",
+      "target": "CS 4824",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 4824",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 3704",
+      "target": "CS 4824",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 4105",
+      "target": "CS 4824",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 4604",
+      "target": "CS 4824",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 4705",
+      "target": "CS 4824",
+      "gradeReq": null
+    },
+    {
+      "source": "STAT 4714",
+      "target": "CS 4824",
+      "gradeReq": null
+    },
+    {
+      "source": "CMDA 2006",
+      "target": "CS 4824",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3824",
+      "target": "CS 4884",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2114",
+      "target": "CS 4894",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 2505",
+      "target": "CS 4894",
+      "gradeReq": null
+    },
+    {
+      "source": "CS 3604",
+      "target": "CS 4944",
+      "gradeReq": null
+    }
+  ]
+}
