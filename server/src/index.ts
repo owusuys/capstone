@@ -8,6 +8,7 @@ dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 import courseRouter from "./routes/courses";
 import prereqRouter from "./routes/prereqs";
 import coreqRouter from "./routes/coreqs";
+import pathwayRouter from "./routes/pathways";
 
 const app = express();
 const PORT = Number(process.env.PORT ?? 3001);
@@ -18,6 +19,7 @@ app.use(express.json());
 app.use("/api/courses", courseRouter);
 app.use("/api", prereqRouter);
 app.use("/api/corequisites", coreqRouter);
+app.use("/api/pathways", pathwayRouter);
 
 app.get("/api/health", (_req, res) => res.json({ ok: true }));
 

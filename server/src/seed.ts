@@ -138,6 +138,27 @@ async function createTables(): Promise<void> {
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
   `);
 
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS pathways (
+      id          INT           AUTO_INCREMENT PRIMARY KEY,
+      name        VARCHAR(100)  NOT NULL,
+      description TEXT          NULL,
+      sort_order  INT           NOT NULL DEFAULT 0
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+  `);
+
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS pathway_courses (
+      pathway_id  INT           NOT NULL,
+      course_id   VARCHAR(20)   NOT NULL,
+      role        ENUM('essential','elective','capstone') NOT NULL DEFAULT 'essential',
+      sort_order  INT           NOT NULL DEFAULT 0,
+      PRIMARY KEY (pathway_id, course_id),
+      FOREIGN KEY (pathway_id) REFERENCES pathways(id)  ON DELETE CASCADE,
+      FOREIGN KEY (course_id)  REFERENCES courses(id)   ON DELETE CASCADE
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+  `);
+
   console.log("Tables ready.");
 }
 
@@ -214,6 +235,154 @@ async function seedCorequisites(): Promise<void> {
   console.log(`Inserted/skipped ${count} corequisite pairs.`);
 }
 
+const PATHWAY_SEED = [
+  {
+    name: "AI/ML Engineer",
+    description: "Artificial Intelligence and Machine Learning Engineers build the tech that makes computers smart — from apps that know what song you'll love next to cars that drive themselves.",
+    sortOrder: 0,
+    courses: [
+      { id: "CS 3114", role: "essential", sortOrder: 0 },
+      { id: "CS 3214", role: "essential", sortOrder: 1 },
+      { id: "CS 3304", role: "essential", sortOrder: 2 },
+      { id: "CS 3604", role: "essential", sortOrder: 3 },
+      { id: "CS 4104", role: "elective",  sortOrder: 0 },
+      { id: "CS 3654", role: "elective",  sortOrder: 1 },
+      { id: "CS 4654", role: "elective",  sortOrder: 2 },
+      { id: "CS 4804", role: "elective",  sortOrder: 3 },
+      { id: "CS 4824", role: "elective",  sortOrder: 4 },
+      { id: "CS 4094", role: "capstone",  sortOrder: 0 },
+    ],
+  },
+  {
+    name: "HCI/UX Engineer",
+    description: "Human Computer Interaction and User Experience Engineers design the tech people actually want to use — from sleek apps to immersive VR. They blend coding and creativity to make technology intuitive, engaging, and fun.",
+    sortOrder: 1,
+    courses: [
+      { id: "CS 2104", role: "essential", sortOrder: 0 },
+      { id: "CS 2114", role: "essential", sortOrder: 1 },
+      { id: "CS 3214", role: "essential", sortOrder: 2 },
+      { id: "CS 3604", role: "essential", sortOrder: 3 },
+      { id: "CS 4104", role: "elective",  sortOrder: 0 },
+      { id: "CS 3724", role: "elective",  sortOrder: 1 },
+      { id: "CS 3744", role: "elective",  sortOrder: 2 },
+      { id: "CS 4634", role: "elective",  sortOrder: 3 },
+      { id: "CS 4204", role: "elective",  sortOrder: 4 },
+      { id: "CS 4094", role: "capstone",  sortOrder: 0 },
+    ],
+  },
+  {
+    name: "Cybersecurity Engineer",
+    description: "Cybersecurity Engineers defend the digital world. They protect networks, applications, and data from hackers, malware, and insider threats.",
+    sortOrder: 2,
+    courses: [
+      { id: "CS 2104", role: "essential", sortOrder: 0 },
+      { id: "CS 3114", role: "essential", sortOrder: 1 },
+      { id: "CS 3214", role: "essential", sortOrder: 2 },
+      { id: "CS 3604", role: "essential", sortOrder: 3 },
+      { id: "CS 4104", role: "elective",  sortOrder: 0 },
+      { id: "CS 3274", role: "elective",  sortOrder: 1 },
+      { id: "CS 4224", role: "elective",  sortOrder: 2 },
+      { id: "CS 4254", role: "elective",  sortOrder: 3 },
+      { id: "CS 4264", role: "elective",  sortOrder: 4 },
+      { id: "CS 4094", role: "capstone",  sortOrder: 0 },
+    ],
+  },
+  {
+    name: "Full Stack Developer",
+    description: "Full Stack Developers build the apps you actually use — from sleek interfaces to the behind-the-scenes logic that makes them work. They bridge front-end and back-end, making sure the whole system runs smoothly from click to database.",
+    sortOrder: 3,
+    courses: [
+      { id: "CS 2104", role: "essential", sortOrder: 0 },
+      { id: "CS 2114", role: "essential", sortOrder: 1 },
+      { id: "CS 3214", role: "essential", sortOrder: 2 },
+      { id: "CS 3604", role: "essential", sortOrder: 3 },
+      { id: "CS 4104", role: "elective",  sortOrder: 0 },
+      { id: "CS 3704", role: "elective",  sortOrder: 1 },
+      { id: "CS 3714", role: "elective",  sortOrder: 2 },
+      { id: "CS 3754", role: "elective",  sortOrder: 3 },
+      { id: "CS 4604", role: "elective",  sortOrder: 4 },
+      { id: "CS 4094", role: "capstone",  sortOrder: 0 },
+    ],
+  },
+  {
+    name: "Social Impact Engineer",
+    description: "Social Impact Engineers put people first. They use code to tackle real problems — from making apps accessible to fighting misinformation to building tools that strengthen communities.",
+    sortOrder: 4,
+    courses: [
+      { id: "CS 2104",   role: "essential", sortOrder: 0 },
+      { id: "CS 3114",   role: "essential", sortOrder: 1 },
+      { id: "STAT 4705", role: "essential", sortOrder: 2 },
+      { id: "CS 3604",   role: "essential", sortOrder: 3 },
+      { id: "CS 4104",   role: "elective",  sortOrder: 0 },
+      { id: "CS 3654",   role: "elective",  sortOrder: 1 },
+      { id: "CS 3724",   role: "elective",  sortOrder: 2 },
+      { id: "CS 4014",   role: "elective",  sortOrder: 3 },
+      { id: "BIT 4604",  role: "elective",  sortOrder: 4 },
+      { id: "CS 4094",   role: "capstone",  sortOrder: 0 },
+    ],
+  },
+  {
+    name: "Freestyler",
+    description: "Freestylers don't fit in one box — and that's the point. You mix and match electives to design a CS journey that's yours alone. Whether you dive deep into a niche or spread wide across domains, you'll graduate ready to tackle a variety of challenges.",
+    sortOrder: 5,
+    courses: [
+      { id: "CS 2104", role: "essential", sortOrder: 0 },
+      { id: "CS 2505", role: "essential", sortOrder: 1 },
+      { id: "CS 3114", role: "essential", sortOrder: 2 },
+      { id: "CS 3604", role: "essential", sortOrder: 3 },
+      { id: "CS 4094", role: "capstone",  sortOrder: 0 },
+    ],
+  },
+] as const;
+
+// Placeholder course data for non-CS courses referenced in pathways
+const PATHWAY_PLACEHOLDER_COURSES: Array<{ id: string; name: string }> = [
+  { id: "STAT 4705", name: "Probability and Statistics" },
+  { id: "BIT 4604",  name: "Data Governance, Privacy, & Ethics" },
+];
+
+async function seedPathways(): Promise<void> {
+  // Ensure placeholder courses exist (non-CS courses referenced in pathways)
+  for (const c of PATHWAY_PLACEHOLDER_COURSES) {
+    await pool.query(
+      `INSERT IGNORE INTO courses (id, name, credits, is_cs) VALUES (?, ?, 3, 0)`,
+      [c.id, c.name]
+    );
+  }
+
+  let pathwayCount = 0;
+  let courseCount = 0;
+
+  for (const p of PATHWAY_SEED) {
+    const [result] = await pool.query(
+      `INSERT IGNORE INTO pathways (name, description, sort_order) VALUES (?, ?, ?)`,
+      [p.name, p.description, p.sortOrder]
+    ) as [{ insertId: number; affectedRows: number }, unknown];
+
+    // If affectedRows is 0, pathway already exists — look up its id
+    let pathwayId: number;
+    if ((result as { affectedRows: number }).affectedRows === 0) {
+      const [rows] = await pool.query(
+        `SELECT id FROM pathways WHERE name = ?`, [p.name]
+      ) as [Array<{ id: number }>, unknown];
+      pathwayId = rows[0].id;
+    } else {
+      pathwayId = (result as { insertId: number }).insertId;
+      pathwayCount++;
+    }
+
+    for (const c of p.courses) {
+      await pool.query(
+        `INSERT IGNORE INTO pathway_courses (pathway_id, course_id, role, sort_order) VALUES (?, ?, ?, ?)`,
+        [pathwayId, c.id, c.role, c.sortOrder]
+      );
+      courseCount++;
+    }
+  }
+
+  console.log(`Inserted/skipped ${pathwayCount} pathways, ${courseCount} pathway course entries.`);
+}
+
 async function main(): Promise<void> {
   console.log("Starting seed...");
   try {
@@ -221,6 +390,7 @@ async function main(): Promise<void> {
     await seedCourses();
     await seedPrerequisites();
     await seedCorequisites();
+    await seedPathways();
     console.log("Seed complete.");
   } catch (err) {
     console.error("Seed failed:", err);

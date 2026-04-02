@@ -123,6 +123,10 @@ function App() {
           />
           <div className="header-divider" />
           <ModeToggle mode={mode} onModeChange={setMode} />
+          <div className="header-divider" />
+          <a href="/pathways" style={{ color: "rgba(255,255,255,0.85)", fontSize: 13, textDecoration: "none", fontWeight: 500, whiteSpace: "nowrap" }}>
+            Pathways
+          </a>
         </div>
       </header>
       <div className="main">

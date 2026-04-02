@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import CourseTable from "../components/admin/CourseTable";
 import PrereqEditor from "../components/admin/PrereqEditor";
 import CoreqEditor from "../components/admin/CoreqEditor";
+import PathwaysEditor from "../components/admin/PathwaysEditor";
 import type { Course } from "../types/course";
 
-type Tab = "courses" | "prereqs" | "coreqs";
+type Tab = "courses" | "prereqs" | "coreqs" | "pathways";
 
 const SESSION_KEY = "vtcs_admin_pw";
 
@@ -105,13 +106,13 @@ export default function AdminPage() {
 
       {/* Tabs */}
       <div style={styles.tabBar}>
-        {(["courses", "prereqs", "coreqs"] as Tab[]).map((t) => (
+        {(["courses", "prereqs", "coreqs", "pathways"] as Tab[]).map((t) => (
           <button
             key={t}
             style={{ ...styles.tabBtn, ...(tab === t ? styles.tabActive : {}) }}
             onClick={() => setTab(t)}
           >
-            {t === "courses" ? "Courses" : t === "prereqs" ? "Prerequisites" : "Corequisites"}
+            {t === "courses" ? "Courses" : t === "prereqs" ? "Prerequisites" : t === "coreqs" ? "Corequisites" : "Pathways"}
           </button>
         ))}
       </div>
@@ -126,6 +127,9 @@ export default function AdminPage() {
         )}
         {tab === "coreqs" && (
           <CoreqEditor courses={courses} password={password} onRefresh={loadCourses} />
+        )}
+        {tab === "pathways" && (
+          <PathwaysEditor courses={courses} password={password} />
         )}
       </div>
     </div>
